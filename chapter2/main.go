@@ -17,3 +17,12 @@ func main() {
 func (s *Saiyan) Super() {
 	s = &Saiyan{"Gohan", 1000}
 }
+
+// NewSaiyan returns a Saiyan pointer. It's like a constructor, but a factory
+// instead.
+func NewSaiyan(name string, power int) *Saiyan {
+	return &Saiyan{
+		Name:  name,
+		Power: power,
+	}
+}

@@ -9,10 +9,11 @@ type Saiyan struct {
 
 func main() {
 	goku := &Saiyan{"Goku", 9000}
-	Super(goku)
+	goku.Super()
 	fmt.Println(goku.Power)
 }
 
-func Super(s *Saiyan) {
+// Super The type "*Saiyan" is the _receiver_ of the Super() method.
+func (s *Saiyan) Super() {
 	s = &Saiyan{"Gohan", 1000}
 }

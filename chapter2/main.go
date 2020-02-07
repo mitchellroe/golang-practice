@@ -8,9 +8,6 @@ type Saiyan struct {
 }
 
 func main() {
-	goku := Saiyan{
-		Name:  "Goku",
-		Power: 9000,
-	}
+	goku := Saiyan{"Goku", 9000}
 	fmt.Println(goku.Power)
 }

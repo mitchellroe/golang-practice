@@ -14,5 +14,5 @@ func main() {
 }
 
 func Super(s *Saiyan) {
-	s.Power += 10000
+	s = &Saiyan{"Gohan", 1000}
 }
